@@ -1,0 +1,16 @@
+<?php /* Smarty version 2.6.26, created on 2012-10-22 13:34:26
+         compiled from file:/var/www/next/eventos/plugins/generic/googleAnalytics/pageTagGa.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'file:/var/www/next/eventos/plugins/generic/googleAnalytics/pageTagGa.tpl', 17, false),)), $this); ?>
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("<?php echo ((is_array($_tmp=$this->_tpl_vars['googleAnalyticsSiteId'])) ? $this->_run_mod_handler('escape', true, $_tmp) : $this->_plugins['modifier']['escape'][0][0]->smartyEscape($_tmp)); ?>
+");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- /Google Analytics -->

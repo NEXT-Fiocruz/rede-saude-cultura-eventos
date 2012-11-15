@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.paymethod.paypal.displayName' => 'Paypal',
+  'plugins.paymethod.paypal.settings.paypalenable' => 'Ativar PayPal',
+  'plugins.paymethod.paypal.settings.paypalurl' => 'URL do IPN',
+  'plugins.paymethod.paypal.settings.paypalurl.description' => 'Esta é a URL do serviço de Notificação de Pagamento Instantâneo (IPN) do PayPal. Para testar utilize <u>https://www.sandbox.paypal.com/cgi-bin/webscr</u>; para sistemas em produção, use <u>https://www.paypal.com/cgi-bin/webscr</u>.',
+  'plugins.paymethod.paypal.settings.selleraccount' => 'Conta do Vendedor',
+  'plugins.paymethod.paypal.settings.selleraccount.description' => 'Esta é o nome da conta de usuário do PayPal que é usada para identificação pelos vendedores, geralmente um e-mail.',
+  'plugins.paymethod.paypal.settings.curlNotInstalled' => 'Atenção: a biblioteca CURL, para PHP, não está instalada. Suporte aos pagamentos via PayPal necessitam da biblioteca CURL e não funcionará até que a mesma esteja instalada.',
+  'plugins.paymethod.paypal.settings' => 'Configurações do PayPal',
+  'plugins.paymethod.paypal' => 'Pagamento via PayPal',
+  'plugins.paymethod.paypal.description' => 'Aceitará todos os principais cartões de crédito, assim como eChecks; não necessita de conta de membro no PayPal dos participantes, mas requer que os organizadores da conferência criem uma <a href="http://www.paypal.com" target="_new">Conta de Negócios do PayPal</a>',
+  'plugins.paymethod.paypal.warning' => 'Ao clicar em Continue, você será direcionado ao portal do PayPal. Após efetuar o pagamento via PayPal você pode clicar no botão “Return to Merchant” para retornar a este portal.',
+  'plugins.paymethod.paypal.purchase.amount' => 'Quantia',
+  'plugins.paymethod.paypal.purchase.description' => 'Descrição',
+  'plugins.paymethod.paypal.purchase.cancelled' => 'Sua negociação foi cancelada.',
+  'plugins.paymethod.paypal.purchase.cancelled.title' => 'Negociação Cancelada',
+); ?>

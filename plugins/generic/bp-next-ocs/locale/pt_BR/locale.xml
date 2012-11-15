@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2012 Alberto Souza
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  *
+  * $Id$
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.generic.bpnextocs.displayName">BP NEXT OCS</message>
+	<message key="plugins.generic.bpnextocs.description">Este plugin permite a autenticação e sincronização das contas de usuários usando uma instalação do wordpress</message>
+	<message key="plugins.generic.bpnextocs.settings">Opções BP NEXT OCS</message>
+	<message key="plugins.generic.bpnextocs.settings.hostname">Hostname do Servidor</message>
+</locale>

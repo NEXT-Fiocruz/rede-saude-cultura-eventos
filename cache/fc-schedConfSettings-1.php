@@ -1,0 +1,117 @@
+<?php return array (
+  'acceptSupplementaryReviewMaterials' => true,
+  'boardEnabled' => true,
+  'closeCommentsDate' => 1343530799,
+  'contactEmail' => 'next@icict.fiocruz.br',
+  'contactFax' => '',
+  'contactMailingAddress' => '',
+  'contactName' => 'Rede Saúde e Cultura',
+  'contactPhone' => '(61) 3329-4521',
+  'contactTitle' => '',
+  'contributors' => 
+  array (
+  ),
+  'copySubmissionAckAddress' => 'alberto.souza.99@gmail.com',
+  'copySubmissionAckPrimaryContact' => true,
+  'copySubmissionAckSpecified' => true,
+  'delayOpenAccessDate' => 1343444400,
+  'enablePublicPaperId' => false,
+  'enablePublicSuppFileId' => false,
+  'endDate' => 1354672800,
+  'envelopeSender' => '',
+  'locationAddress' => '',
+  'locationCity' => 'Rio de Janeiro',
+  'locationCountry' => 'BR',
+  'locationName' => '',
+  'metaCitations' => false,
+  'metaCoverage' => false,
+  'metaDiscipline' => false,
+  'metaSubject' => false,
+  'metaSubjectClass' => false,
+  'metaSubjectClassUrl' => 'http://',
+  'metaType' => false,
+  'notifyAllAuthorsOnDecision' => false,
+  'numDaysBeforeInviteReminder' => 0,
+  'numDaysBeforeSubmitReminder' => 0,
+  'numWeeksPerReview' => 4,
+  'numWeeksPerReviewAbsolute' => 1348714800,
+  'numWeeksPerReviewRelative' => 0,
+  'paymentMethodPluginName' => 'ManualPayment',
+  'postAbstracts' => false,
+  'postAbstractsDate' => 1350270000,
+  'postAccommodation' => false,
+  'postCFP' => true,
+  'postOverview' => false,
+  'postPapers' => false,
+  'postPapersDate' => 1350270000,
+  'postPayment' => false,
+  'postPresentations' => false,
+  'postProgram' => false,
+  'postProposalSubmission' => false,
+  'postScheduleDate' => 1343444400,
+  'postSupporters' => false,
+  'postTimeline' => false,
+  'postTrackPolicies' => false,
+  'previewAbstracts' => false,
+  'rateReviewerOnQuality' => 0,
+  'regAuthorCloseDate' => 1354499999,
+  'regAuthorOpenDate' => 1350270000,
+  'regReviewerCloseDate' => 1347764399,
+  'regReviewerOpenDate' => 1343444400,
+  'remindForInvite' => 0,
+  'remindForSubmit' => 0,
+  'restrictReviewerFileAccess' => 0,
+  'reviewDeadlineType' => 0,
+  'reviewerAccessKeysEnabled' => 0,
+  'reviewMode' => 0,
+  'showCFPDate' => 1343703600,
+  'sponsors' => 
+  array (
+  ),
+  'startDate' => 1354500000,
+  'statCountAccept' => false,
+  'statCountDecline' => false,
+  'statCountRevise' => false,
+  'statDaysPerReview' => false,
+  'statItemsPublished' => false,
+  'statNumSubmissions' => false,
+  'statPeerReviewed' => false,
+  'statRegisteredReaders' => false,
+  'statRegisteredUsers' => false,
+  'statRegistrations' => true,
+  'submissionsCloseDate' => 1354499999,
+  'submissionsOpenDate' => 1350529200,
+  'supportEmail' => 'alberto.souza.99@gmail.com',
+  'supportName' => 'Alberto Souza',
+  'supportPhone' => '2176434196',
+  'acronym' => 
+  array (
+    'pt_BR' => 'isccs',
+  ),
+  'emailSignature' => 
+  array (
+    'pt_BR' => '________________________________________________________________________
+Semana de Ciência, Cultura e Saúde
+http://www.next.icict.fiocruz.br/conferencias/index.php/CRSC/Icrsc/index',
+  ),
+  'submissionChecklist' => 
+  array (
+    'pt_BR' => 
+    array (
+      0 => 
+      array (
+        'order' => '1',
+        'content' => 'Li e estou plenamente de acordo com as normas do <a title="REGULAMENTO DA FEIRA LIVRE" href="/conferencias/index.php/CRSC/index/pages/view/regulamento-da-feira-livre" target="_blank">REGULAMENTO<br /> para participar da FEIRA LIVRE</a>.<br />',
+      ),
+      1 => 
+      array (
+        'order' => '2',
+        'content' => 'Autorizo e estou plenamente de acordo com todos os itens do <a title="TERMO DE AUTORIZAÇÃO DE USO DE IMAGEM  " href="/conferencias/index.php/CRSC/index/pages/view/termo-de-uso-de-imagem" target="_blank">TERMO DE<br />AUTORIZAÇÃO DE USO DA IMAGEM</a>',
+      ),
+    ),
+  ),
+  'title' => 
+  array (
+    'pt_BR' => '1º Semana de Ciência, Cultura e Saúde',
+  ),
+); ?>

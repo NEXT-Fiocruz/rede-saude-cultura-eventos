@@ -1,0 +1,13 @@
+# server config
+.htaccess
+
+# Ignore configuration files that may contain sensitive information.
+config.inc.php
+config.TEMPLATE.inc.php
+
+# Ignore paths that contain user-generated content.
+public/*
+arquivos/*
+
+# ..
+robots.txt
