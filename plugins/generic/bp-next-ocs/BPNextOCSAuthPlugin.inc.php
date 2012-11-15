@@ -27,13 +27,14 @@ class BPNextOCSAuthPlugin extends GenericPlugin {
   protected $token;
 
 	// PLUGIN CONFIGURATION
-	protected $wordpress_db_name = 'rede_saude_cultura';
-	protected $wordpress_db_prefix = 'bp_';
-	protected $wordpress_db_user = 'sec_user';
-	protected $wordpress_db_user_pass = 'sec#2012';
-	protected $cookie_domain = 'next.icict.fiocruz.br';
 	
-	///
+	protected $wordpress_db_name = NULL;
+	protected $wordpress_db_prefix = NULL;
+	protected $wordpress_db_user = NULL;
+	protected $wordpress_db_user_pass = NULL;
+	protected $cookie_domain = NULL;
+	
+	/// 
 	
 	
 	function register($category, $path) {
@@ -210,7 +211,13 @@ class BPNextOCSAuthPlugin extends GenericPlugin {
 		// $this->redirectToWPIfNeed();
     
 		// Set retuser to point to the user that was passed by reference
-
+    $this->wordpress_db_name = Config::getVar('bp_next_ocs', 'wordpress_db_name') ;
+    $this->wordpress_db_prefix = Config::getVar('bp_next_ocs', 'wordpress_db_prefix');
+    $this->wordpress_db_user = Config::getVar('bp_next_ocs', 'wordpress_db_user');
+    $this->wordpress_db_user_pass = Config::getVar('bp_next_ocs', 'wordpress_db_user_pass');
+    $this->cookie_domain = Config::getVar('bp_next_ocs', 'cookie_domain');
+		
+		
     $retuser =& $args[0];  
 
     // get token and set in this object
