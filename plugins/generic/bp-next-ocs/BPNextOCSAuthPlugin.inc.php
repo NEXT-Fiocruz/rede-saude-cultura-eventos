@@ -300,13 +300,15 @@ class BPNextOCSAuthPlugin extends GenericPlugin {
   		// User not found via UID or by email - so they are new - so just create them
   
   		$user = $this->registerUserFromWordpress();
-  
-  		$retuser = $user;
-  
-  		// reload the page
-  		if(!$isloggedIn){		
-  			header( "Location: ".$_SERVER['HTTP_REFERER'] );
-  		}
+      if( $user ){
+        // user adicionado no wp com sucesso
+    		$retuser = $user;
+    
+    		// reload the page
+    		if(!$isloggedIn){		
+    			header( "Location: ".$_SERVER['HTTP_REFERER'] );
+    		}
+      }
   	}
 		return null;
 	}
@@ -320,7 +322,16 @@ class BPNextOCSAuthPlugin extends GenericPlugin {
 		// Create a new user object and set it's fields from the header variables
 
 		$user = new User();
-
+    
+    // se alguma das variaveis nescessárias para criar um user não existirem
+    // retorna false
+    if(empty($this->loggedInUser['id']) ||
+       empty($this->loggedInUser['user_nicename']) ||
+       empty($this->loggedInUser['display_name']) ||
+       empty($this->loggedInUser['email'])
+    )
+      return false;
+    
 		//  id, user_nicename, display_name, email
 		
 		$user->setAuthStr( $this->loggedInUser['id'] );
