@@ -44,10 +44,5 @@ class CSecThemePlugin extends ThemePlugin {
 
 }
 
-// EXIBIR O CONTEÚDO DE UMA VARIAVÉL NO CONSOLE DO JAVASCRIPT DO NAVEGADOR
-function debugaa($algo) {
-  $algo = json_encode($algo);
-  print "<script>console.log($algo)</script>";
-}
 
 ?>
