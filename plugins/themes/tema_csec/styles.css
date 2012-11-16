@@ -681,6 +681,11 @@ div#fiocruz {
   background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
 }
 
-
-
+.main-menu-about,
+.main-menu-search,
+.main-menu-login,
+.main-menu-user,
+.main-menu-shendconf-current{
+  display: none !important; 
+}
 
