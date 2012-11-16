@@ -116,12 +116,14 @@
 	<td class="value"><textarea name="interests[{$formLocale|escape}]" id="interests" rows="5" cols="40" class="textarea">{$interests[$formLocale]|escape}</textarea></td>
 </tr>
 <tr valign="top">
-	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
+	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />Fale um pouco sobre você e suas atividades profissionais e acadêmicas</td>
 	<td class="value"><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="textArea">{$biography[$formLocale]|escape}</textarea></td>
 </tr>
 <tr valign="top">
        <td class="label">
 	       {fieldLabel name="profileImage" key="user.profile.form.profileImage"}
+	       <br/>
+	       Tamanho em pixels(150x150px) e tipo de arquivo .jpg ou .png 
        </td>
        <td class="value">
 	       <input type="file" id="profileImage" name="profileImage" class="uploadField" /> <input type="submit" name="uploadProfileImage" value="{translate key="common.upload"}" class="button" />

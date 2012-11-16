@@ -41,28 +41,7 @@ class CSecThemePlugin extends ThemePlugin {
 	function getLocaleFilename($locale) {
 		return null; // No locale data
 	}
-/*
-  function initialize($x) {
-    var_dump('initialize');
-    var_dump($x);exit;
-    return null; // No locale data
-  }
-*/
-	/**
-	 * Activate the theme.
-     * Add plugin theme template dir
-	 */
-	function activate(&$templateMgr) {
-	  
-	if (($stylesheetFilename = $this->getStylesheetFilename()) != null) {
-			$path = Request::getBaseUrl() . '/' . $this->getPluginPath() . '/' . $stylesheetFilename;
-			$templateMgr->addStyleSheet($path);
 
-			// add the plugin template dir
-			$theme_template_dir = $_SERVER['DOCUMENT_ROOT'] . Request::getBasePath() . '/' . $this->getPluginPath() . '/templates' ;
-			array_unshift($templateMgr->template_dir,$theme_template_dir );
-		}
-	}
 }
 
 // EXIBIR O CONTEÚDO DE UMA VARIAVÉL NO CONSOLE DO JAVASCRIPT DO NAVEGADOR

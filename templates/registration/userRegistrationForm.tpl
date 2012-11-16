@@ -11,7 +11,7 @@
 {strip}
 {assign var="pageTitle" value="schedConf.registration"}
 {include file="common/header.tpl"}
-{/strip}
+{/strip} 
 
 <form action="{url op="register"}" name="registration" method="post">
 <input type="hidden" name="registrationTypeId" value="{$registrationTypeId|escape}" />
@@ -42,71 +42,7 @@
 </div>
 	<div class="separator"></div>
 {/if}
-<div id="conferenceFees">
-<h3>{translate key="schedConf.registration.conferenceFees"}</h3>
 
-{if !$registrationOptions->wasEmpty()}
-<table class="listing" width="100%">
-	<tr>
-		<td colspan="2" class="headseparator">&nbsp;</td>
-	</tr>
-	<tr valign="top" class="heading">
-		<td width="60%">{translate key="schedConf.registration.options"}</td>
-		<td width="60%">{translate key="schedConf.registration.cost"}</td>
-	</tr>
-	<tr>
-		<td colspan="2" class="headseparator">&nbsp;</td>
-	</tr>
-	{iterate from=registrationOptions item=registrationOption}
-	{assign var=optionId value=$registrationOption->getOptionId()}
-	{if $registrationOption->getPublic()}
-		<tr valign="top">
-			<td class="label">
-				<strong>{$registrationOption->getRegistrationOptionName()|escape}</strong>
-			</td>
-			<td class="data">
-				{if strtotime($registrationOption->getOpeningDate()) < time() && strtotime($registrationOption->getClosingDate()) > time()}
-					<input id="registrationOption-{$optionId|escape}" type="checkbox" name="registrationOptionId[]" {if in_array($optionId, (array) $registrationOptionId)}checked="checked" {/if} value="{$optionId|escape}" />
-					<label for="registrationOption-{$optionId|escape}">{$registrationOptionCosts[$optionId]|string_format:"%.2f"|escape} {$registrationType->getCurrencyCodeAlpha()|escape}</label>
-					{translate key="schedConf.registration.optionCloses" closingDate=$registrationOption->getClosingDate()|date_format:$dateFormatShort}
-				{elseif strtotime($registrationOption->getOpeningDate()) > time()}
-					<input type="checkbox" name="registrationOptionId[]" value="{$optionId|escape}" disabled="disabled" />
-					{$registrationOptionCosts[$optionId]|string_format:"%.2f"|escape} {$registrationType->getCurrencyCodeAlpha()|escape}
-					{translate key="schedConf.registration.optionFuture" openingDate=$registrationOption->getOpeningDate()|date_format:$dateFormatShort}
-				{else}
-					<input type="checkbox" name="registrationOptionId[]" value="{$optionId|escape}" disabled="disabled" />
-					{$registrationOptionCosts[$optionId]|string_format:"%.2f"|escape} {$registrationType->getCurrencyCodeAlpha()|escape}
-					{translate key="schedConf.registration.optionClosed" closingDate=$registrationOption->getClosingDate()|date_format:$dateFormatShort}
-				{/if}
-			</td>
-		</tr>
-		{if $registrationOption->getRegistrationOptionDescription()}
-			<tr valign="top">
-				<td colspan="2">{$registrationOption->getRegistrationOptionDescription()|nl2br}</td>
-			</tr>
-		{/if}
-		<tr valign="top">
-			<td colspan="2">&nbsp;</td>
-		</tr>
-	{/if}
-	{/iterate}
-	{if $registrationOptions->wasEmpty()}
-		<tr>
-			<td colspan="2" class="nodata">{translate key="schedConf.registrationOptions.noneAvailable"}</td>
-		</tr>
-	{/if}
-	<tr>
-		<td colspan="2" class="endseparator">&nbsp;</td>
-	</tr>
-</table>
-{/if}
-
-<p>
-	<label for="feeCode">{translate key="schedConf.registration.feeCode"}</label>&nbsp;&nbsp;<input id="feeCode" name="feeCode" type="text" value="{$feeCode|escape}" class="textField" /><br />
-	{translate key="schedConf.registration.feeCode.description"}
-</p>
-</div>
-<div class="separator"></div>
 <div id="account">
 <h3>{translate key="schedConf.registration.account"}</h3>
 {if $userLoggedIn}
@@ -173,91 +109,123 @@
 {/if}
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="salutation" key="user.salutation"}</td>
-	<td class="value"><input type="text" name="salutation" id="salutation" value="{$salutation|escape}" size="20" maxlength="40" class="textField" /></td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="firstName" required="true" key="user.firstName"}</td>
+	<td class="label">Nome*</td>
 	<td class="value"><input type="text" id="firstName" name="firstName" value="{$firstName|escape}" size="20" maxlength="40" class="textField" /></td>
 </tr>
 	
 <tr valign="top">
-	<td class="label">{fieldLabel name="middleName" key="user.middleName"}</td>
-	<td class="value"><input type="text" id="middleName" name="middleName" value="{$middleName|escape}" size="20" maxlength="40" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="lastName" required="true" key="user.lastName"}</td>
+	<td class="label">Sobrenome*</td>
 	<td class="value"><input type="text" id="lastName" name="lastName" value="{$lastName|escape}" size="20" maxlength="90" class="textField" /></td>
 </tr>
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="initials" key="user.initials"}</td>
-	<td class="value"><input type="text" id="initials" name="initials" value="{$initials|escape}" size="5" maxlength="5" class="textField" />&nbsp;&nbsp;{translate key="user.initialsExample"}</td>
+  <td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
+  <td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
 </tr>
-	
+
 <tr valign="top">
-	<td class="label">{fieldLabel name="affiliation" key="user.affiliation" required="true"}</td>
+  <td class="label">CPF:*</td>
+  <td class="value"><input type="text" id="cpf" name="cpf" value="{$smarty.post.cpf}" size="30" maxlength="90" class="textField" /></td>
+</tr>
+
+<tr valign="top">
+  <td class="label">Telefone fixo ou celular de contato</td>
+  <td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
+</tr>
+
+<tr valign="top">
+	<td class="label">Nome completo da {fieldLabel name="affiliation" key="user.affiliation" required="true"} onde atua</td>
 	<td class="value"><textarea id="affiliation" name="affiliation" rows="5" cols="40" class="textArea">{$affiliation|escape}</textarea></td>
 </tr>
 
+</table>
+<div class="separator"></div>
+<table class="data" width="100%">
+
 <tr valign="top">
-	<td class="label">{fieldLabel name="signature" key="user.signature"}</td>
-	<td class="value"><textarea name="signature[{$formLocale|escape}]" id="signature" rows="5" cols="40" class="textArea">{$signature[$formLocale]|escape}</textarea></td>
+  <td class="label"><strong>Informe a natureza da sua atuação:</strong><br/><br/></td>
+</tr>  
+<tr valign="top">  
+  <td class="value">
+    <input type="checkbox" name="naturezaatuacao[]" value="a">Profissional de Saúde<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="b">Profissional de Educação<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="c">Profissional de Cultura<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="d">Cargo de Chefia na Adm. Pública<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="e">Artista, Promotor Cultural, Artesão<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="f">Militante de movimento social<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="g">Estudante<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="h">Pesquisador<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="i">Voluntário<br>
+    Outro, especifique: <input type="text" name="naturezaatuacaooutro" {$smarty.post.naturezaatuacaooutro}"><br>
+  </td>
+</tr>
+ 
+</table>
+<div class="separator"></div>
+<table class="data" width="100%">
+
+<tr valign="top">
+  <td class="label"><strong>Quais, dentre os temas abaixo, você gostaria de discutir durante o Encontro
+Nacional da Rede Saúde e Cultura? (indique até duas prioridades):</strong><br/><br/></td>
+</tr>
+<tr valign="top">
+  <td class="value">
+    <input type="checkbox" name="temas[]" value="a">Práticas Tradicionais em Saúde<br>
+    <input type="checkbox" name="temas[]" value="b">Práticas integrativas e complementares em saúde<br>
+    <input type="checkbox" name="temas[]" value="c">Equidade em saúde e cultura<br>
+    <input type="checkbox" name="temas[]" value="d">Saúde Indígena<br>
+    <input type="checkbox" name="temas[]" value="e">Saúde Mental<br>
+    <input type="checkbox" name="temas[]" value="f">A Arte e o cuidado à saúde (promoção, prevenção e reestabelecimento da
+saúde)<br>
+    <input type="checkbox" name="temas[]" value="g">Controle social, participação e solidariedade<br>
+    <input type="checkbox" name="temas[]" value="h">Acesso a conhecimentos e expressões culturais tradicionais<br>
+    <input type="checkbox" name="temas[]" value="i">Necessidades de formação para apoiar a gestão, os serviços e as práticas na
+interface saúde e cultura<br>  
+  <br>
+  </td>
+</tr>
+
+</table>
+
+<input type="hidden" value="." name="mailingAddress" /> 
+
+<input type="hidden" value="BR" name="country" />	
+
+
+
+<div class="separator"></div>
+<br/>
+<p>O evento Iº Conexão Internacional Saúde e (Ciber) Cultura da
+ <strong>Semana Nacional Ciência, Cultura e Saúde</strong> acontecerá na 
+ <a href="http://www.next.icict.fiocruz.br/sec/" target="_blank">Rede Saúde e Cultura na internet</a><br/>
+ </p>
+<br/>
+<p> Para saber mais sobre a Rede Saúde e Cultura na internet acesse o 
+<a href="http://www.next.icict.fiocruz.br/sec/sobre" target="_blank">Sobre a rede na internet</a>
+</p>
+<br/>
+<table class="data" width="100%">
+
+<tr valign="top">
+ <td class="label">Você gostaria de participar da 
+ <a href="http://www.next.icict.fiocruz.br/sec/" target="_blank">Rede Saúde e Cultura na internet</a>
+ e aceita os <a href="http://www.next.icict.fiocruz.br/sec/termos-de-servico" target="_blank">termos de serviço da rede</a>?
+ </td>
 </tr>
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
-	<td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="userUrl" key="user.url"}</td>
-	<td class="value"><input type="text" id="userUrl" name="userUrl" value="{$userUrl|escape}" size="30" maxlength="90" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="phone" key="user.phone"}</td>
-	<td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="fax" key="user.fax"}</td>
-	<td class="value"><input type="text" name="fax" id="fax" value="{$fax|escape}" size="15" maxlength="24" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="mailingAddress" key="common.mailingAddress"}</td>
-	<td class="value"><textarea name="mailingAddress" id="mailingAddress" rows="3" cols="40" class="textArea">{$mailingAddress|escape}</textarea></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="country" key="common.country"}</td>
-	<td class="value">
-		<select name="country" id="country" class="selectMenu">
-			<option value=""></option>
-			{html_options options=$countries selected=$country}
-		</select>
-	</td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
-	<td class="value"><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="textArea">{$biography[$formLocale]|escape}</textarea></td>
+  <td class="value">
+    <select name="participardarede" id="participardarede" class="selectMenu">
+      <option value="1">Sim, eu gostaria de participar da Rede da Rede Saúde e Cultura na internet</option>
+      <option value="0">Não gostaria de participar ou não concordo com os termos da rede</option>
+    </select>
+  </td>
+  
 </tr>
 
 </table>
 
 {/if}{* user is logged in *}
-</div>
-<div class="separator"></div>
-<div id="specialRequests">
-<h3>{translate key="schedConf.registration.specialRequests"}</h3>
-
-<p><label for="specialRequests">{translate key="schedConf.registration.specialRequests.description"}</label></p>
-
-<p><textarea name="specialRequests" id="specialRequests" cols="60" rows="10" class="textArea">{$specialRequests|escape}</textarea></p>
 </div>
 <div class="separator"></div>
 

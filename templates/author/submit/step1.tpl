@@ -11,12 +11,6 @@
 {assign var="pageTitle" value="author.submit.step1"}
 {include file="author/submit/submitHeader.tpl"}
 
-{if $currentSchedConf->getSetting('supportPhone')}
-	{assign var="howToKeyName" value="author.submit.howToSubmit"}
-{else}
-	{assign var="howToKeyName" value="author.submit.howToSubmitNoPhone"}
-{/if}
-
 <p>{translate key=$howToKeyName supportName=$currentSchedConf->getSetting('supportName') supportEmail=$currentSchedConf->getSetting('supportEmail') supportPhone=$currentSchedConf->getSetting('supportPhone')}</p>
 
 <div class="separator"></div>
@@ -34,14 +28,14 @@
 	{/foreach}
 	<input type="hidden" name="trackId" value="{$trackOptionKey|escape}" />
 {else}{* More than one track; display the selection dropdown *}
-	<h3>{translate key="author.submit.conferenceTrack"}</h3>
+	<h3>Tipo de submissão</h3>
 
 	{url|assign:"url" page="schedConf" op="trackPolicies"}
 	<p>{translate key="author.submit.conferenceTrackDescription" aboutUrl=$url}</p>
 
 	<table class="data" width="100%">
 	<tr valign="top">	
-		<td width="20%" class="label">{fieldLabel name="trackId" required="true" key="track.track"}</td>
+		<td width="20%" class="label">Tipo:</td>
 		<td width="80%" class="value"><select name="trackId" id="trackId" size="1" class="selectMenu">{html_options options=$trackOptions selected=$trackId}</select></td>
 	</tr>
 	</table>
@@ -168,17 +162,7 @@ function checkSubmissionChecklist() {
 <div class="separator"></div>
 </div>
 {/if}
-<div id="commentsForDirector">
-<h3>{translate key="author.submit.commentsForDirector"}</h3>
-<table width="100%" class="data">
 
-<tr valign="top">
-	<td width="20%" class="label">{fieldLabel name="commentsToDirector" key="author.submit.comments"}</td>
-	<td width="80%" class="value"><textarea name="commentsToDirector" id="commentsToDirector" rows="3" cols="40" class="textArea">{$commentsToDirector|escape}</textarea></td>
-</tr>
-
-</table>
-</div>
 <div class="separator"></div>
 
 <p><input type="submit" value="{translate key="common.saveAndContinue"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="{if $paperId}confirmAction('{url page="author"}', '{translate|escape:"jsparam" key="author.submit.cancelSubmission"}'){else}document.location.href='{url page="author"}'{/if}" /></p>

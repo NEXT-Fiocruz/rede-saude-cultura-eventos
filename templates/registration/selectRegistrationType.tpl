@@ -19,7 +19,7 @@
 	</tr>
 	<tr valign="top" class="heading">
 		<td width="60%">{translate key="schedConf.registration.type"}</td>
-		<td width="60%">{translate key="schedConf.registration.cost"}</td>
+		<td width="60%">Opção</td>
 	</tr>
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -36,8 +36,7 @@
 				{if strtotime($registrationType->getOpeningDate()) < time() && strtotime($registrationType->getClosingDate()) > time()}
 					{assign var="registrationMethodAvailable" value=1}
 					<input id="registrationType-{$typeId|escape}" type="radio" {if $isFirstRegistrationType}checked="checked" {/if}name="registrationTypeId" value="{$typeId|escape}" />
-					<label for="registrationType-{$typeId|escape}"> {$registrationType->getCost()|string_format:"%.2f"} {$registrationType->getCurrencyCodeAlpha()|escape}</label>
-					{translate key="schedConf.registration.typeCloses" closingDate=$registrationType->getClosingDate()|date_format:$dateFormatShort}
+					<label for="registrationType-{$typeId|escape}">{translate key="schedConf.registration.typeCloses" closingDate=$registrationType->getClosingDate()|date_format:$dateFormatShort}</label>
 					{assign var="isFirstRegistrationType" value=false}
 				{elseif strtotime($registrationType->getOpeningDate()) > time()}
 					<input type="radio" name="registrationTypeId" value="{$typeId|escape}" disabled="disabled" />
