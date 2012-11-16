@@ -9,6 +9,7 @@ config.TEMPLATE.inc.php
 public/*
 arquivos/*
 cache/*
+/cache/*
 
 # ..
 robots.txt

@@ -13,7 +13,7 @@
   *
   * $Id$
   -->
-
+ 
 <locale name="pt_BR" full_name="Português do Brasil">
 	<!--
 	 * This file is organized into several major sections, separated
@@ -35,7 +35,7 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openConferenceSystems">Sistema Eletrônico de Administração de Conferências</message>
+	<message key="common.openConferenceSystems">Sistema Eletrônico de Administração de Eventos</message>
 	<message key="common.noDate">(data)</message>
 	<message key="common.days">dias</message>
 	<message key="common.timeZone">Fuso horário</message>
@@ -99,9 +99,9 @@
 	<message key="navigation.conferenceHelp">Ajuda</message>
 	<message key="navigation.account">Cadastro</message>
 	<message key="navigation.archive">Edições anteriores</message>
-	<message key="navigation.current">Conferências atuais</message>
-	<message key="navigation.otherConferences">Outras conferências</message>
-	<message key="navigation.browseByConference">Por Conferência</message>
+	<message key="navigation.current">Eventos atuais</message>
+	<message key="navigation.otherConferences">Outras eventos</message>
+	<message key="navigation.browseByConference">Por Evento</message>
 	<message key="navigation.browseByAuthor">Por Autor</message>
 	<message key="navigation.infoForAuthors">Para Autores</message>
 	<message key="navigation.infoForReviewers">Para Avaliadores</message>
@@ -130,7 +130,7 @@
 
 	<!-- Common Track Terms -->
 	<message key="track.track">Modalidade</message>
-	<message key="track.tracks">Modalidades da Conferência</message>
+	<message key="track.tracks">Modalidades da Evento</message>
 	<message key="track.title">Título da modalidade</message>
 	<message key="track.abbreviation">Abreviatura</message>
 	<message key="track.abbreviation.example">(Por exemplo, Papers=PAP)</message>
@@ -204,14 +204,14 @@
 	<!-- Submission Notes -->
 
 	<!-- Common Conference Terms -->
-	<message key="conference.conferences">Conferências</message>
-	<message key="conference.conference">Conferência</message>
+	<message key="conference.conferences">Eventos</message>
+	<message key="conference.conference">Evento</message>
 
 	<!-- Common Scheduled Conference Terms -->
-	<message key="schedConf.scheduledConferences">Conferências Agendadas</message>
-	<message key="schedConf.noScheduledConferences">Nenhuma conferência agendada</message>
-	<message key="schedConf.schedConf">Conferência Agendada</message>
-	<message key="schedConf.contents">Informações sobre a Conferência</message>
+	<message key="schedConf.scheduledConferences">Eventos Agendadas</message>
+	<message key="schedConf.noScheduledConferences">Nenhuma evento agendada</message>
+	<message key="schedConf.schedConf">Evento Agendada</message>
+	<message key="schedConf.contents">Informações sobre a Evento</message>
 	<message key="schedConf.overview">Visão Geral</message>
 	<message key="schedConf.trackPolicies">Políticas das Modalidades</message>
 	<message key="schedConf.program">Programa</message>
@@ -220,7 +220,7 @@
 	<message key="schedConf.registration">Inscrição</message>
 	<message key="schedConf.supporters">Organização e Parceiros</message>
 	<message key="schedConf.timeline">Cronograma</message>
-	<message key="schedConf.schedule">Agenda da Conferência</message>
+	<message key="schedConf.schedule">Agenda da Evento</message>
 	<message key="schedConf.links">Links relacionados</message>
 	<message key="schedConf.presentations">Apresentações e Autores</message>
 	<message key="schedConf.presentations.short">Apresentações</message>
@@ -251,12 +251,12 @@
 	<message key="schedConf.registration.specialRequests.description">Descreva necessidades ou solicitações especiais, como dieta específica, acesso para cadeirante, etc.</message>
 	<message key="schedConf.registration.account">Cadastro</message>
 	<message key="schedConf.registration.loggedInAs"><![CDATA[Usuário atualmente logado. Verifique se as informações de cadastro estão corretas. Caso contrário, atualize seus dados clicando em <a href="{$profileUrl}">Meu Perfil</a> ou clique em <a href="{$logoutUrl}">sair do sistem</a> para acessar com outro cadastro.]]></message>
-	<message key="schedConf.registration.createAccount.description"><![CDATA[Usuário não conectado. Para se inscrever na conferência é necessário possuir um cadastro. Caso já possua um, <a href="{$loginUrl}">clique aqui</a> para entrar no sistema; caso contrário, preencha as informações do formulário para criar um novo cadastro.]]></message>
+	<message key="schedConf.registration.createAccount.description"><![CDATA[Usuário não conectado. Para se inscrever na evento é necessário possuir um cadastro. Caso já possua um, <a href="{$loginUrl}">clique aqui</a> para entrar no sistema; caso contrário, preencha as informações do formulário para criar um novo cadastro.]]></message>
 	<!-- User -->
-	<message key="user.showAllConferences">Minhas Conferências</message>
+	<message key="user.showAllConferences">Minhas Eventos</message>
 	<message key="user.createAccount">Criar</message>
-	<message key="user.createAccountForOtherConferences">Cadastrar em outras Conferências</message>
-	<message key="user.myConferences">Minhas Conferências</message>
+	<message key="user.createAccountForOtherConferences">Cadastrar em outras Eventos</message>
+	<message key="user.myConferences">Minhas Eventos</message>
 
 	<!-- Roles -->
 	<message key="user.role.manager">Gerente Geral</message>
@@ -279,7 +279,7 @@
 	<message key="event.logType.author">Autor</message>
 	<message key="event.logType.director">Diretor</message>
 	<message key="event.logType.review">Avaliação</message>
-	<message key="event.logType.conference">Conferência</message>
+	<message key="event.logType.conference">Evento</message>
 
 	<message key="event.eventLog">Log de eventos</message>
 	<message key="event.logLevel">Nível</message>
@@ -310,8 +310,8 @@
 
 
 	<!-- Conference events -->
-	<message key="conference.event.general.configuration">Configurações da Conferência alteradas</message>
-	<message key="conference.event.general.deadline">Prazo final da Conferência expirado</message>
+	<message key="conference.event.general.configuration">Configurações da Evento alteradas</message>
+	<message key="conference.event.general.deadline">Prazo final da Evento expirado</message>
 
 	<!--
 	 *
@@ -322,10 +322,10 @@
 
 	<!-- Reader paper view -->
 	<message key="reader.fullTextNotAvailable">Documentos indisponíveis no momento.</message>
-	<message key="reader.fullTextRegistrationRequired">É necessário inscrever-se na conferência para visualizar os documentos.</message>
+	<message key="reader.fullTextRegistrationRequired">É necessário inscrever-se na evento para visualizar os documentos.</message>
 	<message key="reader.fullTextAccountRequired"><![CDATA[Um cadastro no sistema é obrigatório para visualizar os documentos. <a href="{$registerUrl}">Clique aqui</a> para criar um cadastro.]]></message>
-	<message key="reader.fullTextRegistrantsOnlyUntil">Acesso livre à esta Conferência inicia em {$date}.</message>
-	<message key="reader.fullTextNotPostedYet">Os documentos da Conferência serão publicados em {$date}.</message>
+	<message key="reader.fullTextRegistrantsOnlyUntil">Acesso livre à esta Evento inicia em {$date}.</message>
+	<message key="reader.fullTextNotPostedYet">Os documentos da Evento serão publicados em {$date}.</message>
 
 	<!-- Reader Comments -->
 	<message key="comments.authenticated">{$userName}</message>
@@ -334,11 +334,11 @@
 
 	<!-- Site Administration -->
 
-	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo das conferências hospedadas neste portal em um sistema global de bases de dados de pesquisa integradas,  <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL do portal no <a href="http://pkp.sfu.ca/harvester/" target="_blank">coletador de metadados</a>do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado na revista, permitindo pesquisa coletiva e precisa dentro dos portais que adotam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Arquivos Abertos para Coleta de Metadados - OAI PMH</a>. 
+	<message key="admin.settings.oaiRegistrationDescription"><![CDATA[Para indexar todo o conteúdo das eventos hospedadas neste portal em um sistema global de bases de dados de pesquisa integradas,  <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL do portal no <a href="http://pkp.sfu.ca/harvester/" target="_blank">coletador de metadados</a>do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado na revista, permitindo pesquisa coletiva e precisa dentro dos portais que adotam o <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Protocolo de Arquivos Abertos para Coleta de Metadados - OAI PMH</a>. 
 <br /><br />
 <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e insira <span class="highlight">{$siteUrl}</span> no campo <strong>URL do Portal</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>URL Base para o Arquivo OAI</strong>.
 <br /><br />
-Note que a interface OAI pode ser desativada para este portal nas configurações do sistema. Futuras versões do sistema permitirão ativar ou desativar a interface OAI para conferências, individualmente.]]></message>
+Note que a interface OAI pode ser desativada para este portal nas configurações do sistema. Futuras versões do sistema permitirão ativar ou desativar a interface OAI para eventos, individualmente.]]></message>
 
 
 
@@ -359,7 +359,7 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 	<!-- Payment Handling -->
 
 	<!-- Conference Event Log -->
-	<message key="conference.event.confirmClearLog">Deseja realmente limpar o log de eventos desta conferência?</message>
+	<message key="conference.event.confirmClearLog">Deseja realmente limpar o log de eventos desta evento?</message>
 	<message key="conference.event.confirmDeleteLogEntry">Deseja realmente excluir esta entrada de log de evento?</message>
 	<message key="conference.event.deleteLogEntry">Excluir entrada de log</message>
 	<message key="conference.event.backToEventLog">Voltar para log de eventos</message>
@@ -391,9 +391,9 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 	     ***
 	-->
 	<message key="manager.setup.finalStepSavedNotes"><![CDATA[<p>Configuração quase pronta!</p>
-			<p>A conferência está configurada, podendo consistir de uma única conferência agendada, uma conferência anual, ou uma série de conferências agendadas, todas podendo ser administradas a partir deste portal. Para agendar uma instância específica desta conferência, acesse <a href="{$schedConfSetupUrl}">Conferências Agendadas</a>. Esta página pode ser acessada a qualquer tempo, através da página do Gerente Geral.</p>
+			<p>A evento está configurada, podendo consistir de uma única evento agendada, uma evento anual, ou uma série de eventos agendadas, todas podendo ser administradas a partir deste portal. Para agendar uma instância específica desta evento, acesse <a href="{$schedConfSetupUrl}">Eventos Agendadas</a>. Esta página pode ser acessada a qualquer tempo, através da página do Gerente Geral.</p>
 <p>Acesse estes seis passos de configuração a qualquer tempo pelos <em>links</em> "Página do Usuário > Gerente Geral > Configuração".</p>
-<p>Acesse a administração de Conferências agendadas através de "Página do Usuário > Gerente Geral > Configuração"</p>]]></message>
+<p>Acesse a administração de Eventos agendadas através de "Página do Usuário > Gerente Geral > Configuração"</p>]]></message>
 
 
 	<!--
@@ -418,9 +418,9 @@ Note que a interface OAI pode ser desativada para este portal nas configuraçõe
 	<!-- Conference setup page 5 -->
 
 	<!-- Conference setup page 6 -->
-	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Para indexar o conteúdo desta conferência em um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL da conferência no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado, possibilitando buscas coletivas e precisas entre os sites de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
+	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Para indexar o conteúdo desta evento em um sistema global de distribuição de bases de pesquisa, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">cadastre</a> a URL da evento no <a href="http://pkp.sfu.ca/harvester/" target="_blank">Coletador de Metadados</a> do Public Knowledge Project. Esta ferramenta coleta os metadados de cada item indexado, possibilitando buscas coletivas e precisas entre os sites de pesquisa que utilizam o protocolo de coleta de metadados do <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Open Archives Initiative, OAI-PMH</a>.
 <br /><br />
-Caso o administrador do portal já tenha cadastrado o portal do Coletador do PKP, a conferência será automaticamente indexada, sem necessidade de registro individual.
+Caso o administrador do portal já tenha cadastrado o portal do Coletador do PKP, a evento será automaticamente indexada, sem necessidade de registro individual.
 <br /><br />
 <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Clique aqui</a> e digite <span class="highlight">{$siteUrl}</span> no campo <strong>Site URL</strong>, e <span class="highlight">{$oaiUrl}</span> no campo <strong>Base URL for OAI Archive</strong>.]]></message>
 
@@ -436,7 +436,7 @@ Caso o administrador do portal já tenha cadastrado o portal do Coletador do PKP
 	<!-- Scheduled Conference Setup Step 1 -->
 
 	<!-- Scheduled Conference Setup Step 2 -->
-	<message key="manager.schedConfSetup.submissions.subjectClassificationDescription"><![CDATA[A conferência utiliza um sistema de classificação de assunto disponível na web.<br />
+	<message key="manager.schedConfSetup.submissions.subjectClassificationDescription"><![CDATA[A evento utiliza um sistema de classificação de assunto disponível na web.<br />
 Título do sistema de classificação]]></message>
 
 	<!-- Scheduled Conference Setup Step 3 -->
@@ -465,7 +465,7 @@ Pode ser incluído o motivo para desabilitar a conta.</message>
 	<message key="manager.people.noAdministrativeRights"><![CDATA[Você não possui direitos administrativos sobre este usuário porque:
 		<ul>
 			<li>O usuário é o administrador do sistema</li>
-			<li>O usuário está ativo em uma conferência que você não administra</li>
+			<li>O usuário está ativo em uma evento que você não administra</li>
 		</ul>
 	Esta tarefa deve ser executada por um administrador do sistema.]]></message>
 
@@ -538,7 +538,7 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="reviewer.paper.schedule.due">Prazo para avaliação</message>
 	<message key="reviewer.paper.decision.accept">Aceitar submissão</message>
 	<message key="reviewer.paper.decision.pendingRevisions">Alterações necessárias</message>
-	<message key="reviewer.paper.decision.resubmitElsewhere">Enviar para outra conferência</message>
+	<message key="reviewer.paper.decision.resubmitElsewhere">Enviar para outra evento</message>
 	<message key="reviewer.paper.decision.decline">Rejeitar</message>
 	<message key="reviewer.paper.decision.seeComments">Ver comentários</message>
 	<message key="reviewer.paper.schedule">Agendar</message>
@@ -610,26 +610,26 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="user.account.form.usernameAlphaNumeric">O login deve conter apenas caracteres alfanuméricos, sublinhados, e hífens, e deve começar por um caractere alfanumérico (a-z, 0-9).</message>
 	<message key="user.account.form.emailExists">O endereço de e-mail digitado já está cadastrado.</message>
 	<message key="user.account.form.passwordsDoNotMatch">As senhas não combinam.</message>
-	<message key="user.account.selectConference">Escolha em qual conferência realizar o cadastro</message>
-	<message key="user.account.noConferences">Não há conferências para se cadastrar neste portal.</message>
-	<message key="user.account.selectSchedConf">Escolha em qual conferência agendada realizar o cadastro</message>
-	<message key="user.account.noSchedConfs">Não há conferências agendadas nas quais se cadastrar neste portal.</message>
+	<message key="user.account.selectConference">Escolha em qual evento realizar o cadastro</message>
+	<message key="user.account.noConferences">Não há eventos para se cadastrar neste portal.</message>
+	<message key="user.account.selectSchedConf">Escolha em qual evento agendada realizar o cadastro</message>
+	<message key="user.account.noSchedConfs">Não há eventos agendadas nas quais se cadastrar neste portal.</message>
 	<message key="user.account.createAs">Cadastrar como</message>
 	<message key="user.account.privacyStatement">Política de Privacidade</message>
 	<message key="user.account.completeForm">Preencha o formulário para se cadastrar no sistema.</message>
-	<message key="user.account.hasAccount"><![CDATA[<a href="{$accountUrl}">Clique aqui</a> caso já seja cadastrado no sistema ou em outra conferência do portal.]]></message>
-	<message key="user.account.hasNoAccount"><![CDATA[<a href="{$accountUrl}">Clique aqui</a> caso <strong>não</strong> seja cadastrado em outra conferência do portal.]]></message>
-	<message key="user.account.loginToRegister">Digite o login e senha para cadastrar-se na conferência.</message>
+	<message key="user.account.hasAccount"><![CDATA[<a href="{$accountUrl}">Clique aqui</a> caso já seja cadastrado no sistema ou em outra evento do portal.]]></message>
+	<message key="user.account.hasNoAccount"><![CDATA[<a href="{$accountUrl}">Clique aqui</a> caso <strong>não</strong> seja cadastrado em outra evento do portal.]]></message>
+	<message key="user.account.loginToRegister">Digite o login e senha para cadastrar-se na evento.</message>
 	<message key="user.account.createAccountDisabled">Cadastro de usuários desativado no momento.</message>
 	<message key="user.account.usernameRestriction">O login deve conter apenas letras minúsculas (a-z), números (0-9), sublinhados (_) e hífens (-).</message>
 	<message key="user.account.passwordLengthRestriction">A senha deve ter no mínimo {$length} caracteres.</message>
 	<message key="user.account.form.passwordLengthTooShort">Senha digitada não contém o mínimo de caracteres.</message>
 	<message key="user.account.readerDescription">Receber notificação via e-mail da publicação de apresentações.</message>
-	<message key="user.account.openAccessNotificationDescription">Receber notificação via e-mail quando a conferência se tornar de Acesso Livre.</message>
-	<message key="user.account.authorDescription">Permitido submeter à conferência.</message>
-	<message key="user.account.reviewerDescriptionNoInterests">Disponível para realizar avaliação pelos pares das submissões a esta conferência.</message>
-	<message key="user.account.reviewerDescription">Disponível para realizar avaliação pelos pares das submissões a esta conferência. Identifique a área de interesse para avaliação (áreas de interesse e metodologias de pesquisa).</message>
-	<message key="user.account.authorRegistrationMessage">Embora possua um cadastro no portal, não possui o papel de autor nesta conferência.</message>
+	<message key="user.account.openAccessNotificationDescription">Receber notificação via e-mail quando a evento se tornar de Acesso Livre.</message>
+	<message key="user.account.authorDescription">Permitido submeter à evento.</message>
+	<message key="user.account.reviewerDescriptionNoInterests">Disponível para realizar avaliação pelos pares das submissões a esta evento.</message>
+	<message key="user.account.reviewerDescription">Disponível para realizar avaliação pelos pares das submissões a esta evento. Identifique a área de interesse para avaliação (áreas de interesse e metodologias de pesquisa).</message>
+	<message key="user.account.authorRegistrationMessage">Embora possua um cadastro no portal, não possui o papel de autor nesta evento.</message>
 
 
 
@@ -638,8 +638,8 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="search.searchFor">Pesquisar termo</message>
 	<message key="search.inField">no campo</message>
 	<message key="search.author">Autor</message>
-	<message key="search.withinConference">na conferência</message>
-	<message key="search.allConferences">Todas as conferências</message>
+	<message key="search.withinConference">na evento</message>
+	<message key="search.allConferences">Todas as eventos</message>
 	<message key="search.authorIndex">Índice de Autores</message>
 	<message key="search.authorDetails">Perfil do Autor</message>
 	<message key="search.syntaxInstructions"><![CDATA[<p>Dicas para pesquisa:</p>
@@ -648,7 +648,7 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 <li>Palavras comuns são ignoradas</li>
 <li>São recuperados por padrão apenas artigos contendo <em>todos</em> os termos de busca (ex.: <strong>E</strong> é implícito)</li>
 <li>Combine múltiplas palavras com <strong>OU</strong> para encontrar artigos contendo um ou outro termo; ex.: <em>educação OU pesquisa</em></li>
-<li>Use parênteses para criar buscas mais complexas; ex.: <em>arquivo ((revista OU conferência) NÃO teses)</em></li>
+<li>Use parênteses para criar buscas mais complexas; ex.: <em>arquivo ((revista OU evento) NÃO teses)</em></li>
 <li>Use aspas duplas para recuperar a frase exata; ex.: <em>"Acesso Livre à informação"</em></li>
 <li>Exclua palavras pré-fixando com o sinal <strong>-</strong> ou <strong>NÃO</strong>; ex.: <em>online -políticas</em> ou <em>online NÃO políticas</em></li>
 <li>Use <strong>*</strong> como caracter curinga; ex.: <em>soci* moralidade</em> recuperaria documentos contendo "sociedade" ou "sociológico"</li>
@@ -663,16 +663,16 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="paper.nonpdf.note"><![CDATA[O documento selecionado deverá baixar automaticamente. Em caso negativo, clique no atalho abaixo. Note que o documento pode requerer um visualizador especial ou plugin para ser executado.<br /><br />Caso o documento não seja baixado automaticamente, <a href="{$url}">clique aqui</a>.]]></message>
 
 	<!-- Site index -->
-	<message key="site.conferencesHosted">Conferências hospedadas no portal</message>
-	<message key="site.conferenceView">Acessar a conferência</message>
+	<message key="site.conferencesHosted">Eventos hospedadas no portal</message>
+	<message key="site.conferenceView">Acessar a evento</message>
 	<message key="site.conferenceAccount">Cadastrar</message>
-	<message key="site.schedConfView">Visualizar detalhes da conferência</message>
-	<message key="site.schedConfCurrent">Cronograma da conferência atual</message>
+	<message key="site.schedConfView">Visualizar detalhes da evento</message>
+	<message key="site.schedConfCurrent">Cronograma da evento atual</message>
 
 	<!-- Conference page -->
-	<message key="conference.currentConferences">Conferências disponíveis</message>
-	<message key="conference.noCurrentConferences">Não há conferências em andamento. Veja os arquivos para edições anteriores das conferências.</message>
-	<message key="conference.archive">Edições anteriores da Conferência</message>
+	<message key="conference.currentConferences">Eventos disponíveis</message>
+	<message key="conference.noCurrentConferences">Não há eventos em andamento. Veja os arquivos para edições anteriores das eventos.</message>
+	<message key="conference.archive">Edições anteriores da Evento</message>
 
 	<!-- Scheduled Conference page -->
 	<message key="schedConf.proposalSubmission">Submissão</message>
@@ -686,13 +686,13 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="presentations.schedConfEmpty">Não há apresentações disponíveis ou nenhum documento encontrado com os termos escolhidos.</message>
 	
 	<!-- Program page -->
-	<message key="schedConf.program.programFileInstructions">Clique no link a seguir para visualizar o programa da conferência.</message>
+	<message key="schedConf.program.programFileInstructions">Clique no link a seguir para visualizar o programa da evento.</message>
 	<message key="schedConf.program.viewProgramFile">Visualizar o programa</message>
 	
 	<!-- About The Conference -->
 	<message key="about.statistics">Estatísticas</message>
-	<message key="about.conferenceContact">Contato da Conferência</message>
-	<message key="about.aboutTheConference">Sobre a Conferência</message>
+	<message key="about.conferenceContact">Contato da Evento</message>
+	<message key="about.aboutTheConference">Sobre a Evento</message>
 	<message key="about.organizingTeam">Comitê Organizador</message>
 	<message key="about.submissions">Submissões</message>
 	<message key="about.sponsors">Patrocinadores</message>
@@ -716,10 +716,10 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="about.registration">Inscrições</message>
 	<message key="about.registrationContact">Contato para Inscrições</message>
 	<message key="about.availableRegistrationTypes">Tipos de Inscrição</message>
-	<message key="about.aboutThisPublishingSystem">Sobre este Sistema de Conferências</message>
-	<message key="about.currentConferences">Conferências disponíveis</message>
-	<message key="about.aboutOCSConference"><![CDATA[A conferência utiliza o Sistema Online de Administração de Conferências (SOAC/OCS {$ocsVersion}), sistema de código aberto para administração de conferências desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
-	<message key="about.aboutOCSSite"><![CDATA[O portal utiliza o Sistema Online de Administração de Conferências (SOAC/OCS {$ocsVersion}), sistema de código aberto para administração de conferências, desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutThisPublishingSystem">Sobre este Sistema de Eventos</message>
+	<message key="about.currentConferences">Eventos disponíveis</message>
+	<message key="about.aboutOCSConference"><![CDATA[A evento utiliza o Sistema Online de Administração de Eventos (SOAC/OCS {$ocsVersion}), sistema de código aberto para administração de eventos desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
+	<message key="about.aboutOCSSite"><![CDATA[O portal utiliza o Sistema Online de Administração de Eventos (SOAC/OCS {$ocsVersion}), sistema de código aberto para administração de eventos, desenvolvido, com suporte, e distribuído gratuitamente pelo <a href="http://pkp.sfu.ca/">Public Knowledge Project</a> sob a licença GNU General Public License.]]></message>
 
 	<!-- Announcement -->
 
@@ -732,7 +732,7 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 	<message key="installer.ocsUpgrade">Atualização do Sistema</message>
 	<message key="installer.installationInstructions"><![CDATA[<h4>Versão {$version}</h4>
 	
-	<p>Agradecemos seu interesse em utilizar o <strong>Sistema Online de Administração de Conferências</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> incluído com o pacote. Para maiores informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, acesse o <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Para reportar erros, sugestões ou dúvidas sobre o Sistema Online de Administração de Conferências/Open Conference Systems visite <a href="pkp.sfu.ca/support/forum">PKP Support Forum</a>, ou <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">Sistema de Controle de erros Bugzilla</a> do PKP. Embora os fóruns sejam a forma preferêncial de contato, também pode-se enviar e-mail para a <a href="mailto:pkp.contact@gmail.com">Equipe do PKP (pkp.contact@gmail.com)</a>.</p>
+	<p>Agradecemos seu interesse em utilizar o <strong>Sistema Online de Administração de Eventos</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> incluído com o pacote. Para maiores informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, acesse o <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Para reportar erros, sugestões ou dúvidas sobre o Sistema Online de Administração de Eventos/Open Conference Systems visite <a href="pkp.sfu.ca/support/forum">PKP Support Forum</a>, ou <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">Sistema de Controle de erros Bugzilla</a> do PKP. Embora os fóruns sejam a forma preferêncial de contato, também pode-se enviar e-mail para a <a href="mailto:pkp.contact@gmail.com">Equipe do PKP (pkp.contact@gmail.com)</a>.</p>
 
 <h4>Atualização</h4>
 
@@ -772,7 +772,7 @@ Ativo indica quantas avaliações estão em consideração ou em andamento.]]></
 <li>Um diretório para armazenar os arquivos de submissão deve ser criado e com permissão de escrita (veja mais abaixo Configuração de Arquivos).</li></ol>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>Versão {$version}</h4>
 
-<p>Agradecemos seu interesse em utilizar o <strong>Sistema Online de Administração de Conferências</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para maiores informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, acesse o <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Para reportar erros, sugestões ou dúvidas sobre o Sistema Online de Administração de Conferências/Open Conference Systems visite <a href="pkp.sfu.ca/support/forum">PKP Support Forum</a>, ou <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">Sistema de Controle de erros Bugzilla</a> do PKP. Embora os fóruns sejam a forma preferêncial de contato, também pode-se enviar e-mail para a <a href="mailto:pkp.contact@gmail.com">Equipe do PKP (pkp.contact@gmail.com)</a>.</p>
+<p>Agradecemos seu interesse em utilizar o <strong>Sistema Online de Administração de Eventos</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para maiores informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, acesse o <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Para reportar erros, sugestões ou dúvidas sobre o Sistema Online de Administração de Eventos/Open Conference Systems visite <a href="pkp.sfu.ca/support/forum">PKP Support Forum</a>, ou <a href="http://pkp.sfu.ca/bugzilla/" target="_blank">Sistema de Controle de erros Bugzilla</a> do PKP. Embora os fóruns sejam a forma preferêncial de contato, também pode-se enviar e-mail para a <a href="mailto:pkp.contact@gmail.com">Equipe do PKP (pkp.contact@gmail.com)</a>.</p>
 
 <p>É <strong>altamente recomendado</strong> fazer backup do banco de dados, dos diretórios de arquivos de submissão e do diretório do sistema antes de proceder.</p>
 <p>Caso esteja rodando o <a href="http://www.php.net/features.safe-mode" target="_blank">PHP em Modo Seguro (Safe Mode)</a>, assegure-se que a diretiva max_execution_time no php.ini esteja configurada para um limite alto. Caso este ou qualquer outro limite (ex.: diretiva de Timeout do Apache) for alcançada e o processo de atualização for interrompido, será necessária intervenção manual.</p>]]></message>
@@ -835,8 +835,8 @@ O servidor atualmente tem suporte a mbstring: <strong>{$supportsMBString}</stron
 		
 	<message key="log.timeline.publicationStateChanged">O status da publicação {$oldPublicationState} foi alterada para {$newPublicationState}.</message>
 	<message key="log.timeline.submissionStateChanged">O status da submissão {$oldSubmissionState} foi alterado para {$newSubmissionState}.</message>
-	<message key="log.timeline.startDateChanged">Data de abertura da Conferência {$oldStartDate} alterada para {$newStartDate}.</message>
-	<message key="log.timeline.endDateChanged">Data de conclusão da conferência {$oldEndDate} alterada para {$newEndDate}.</message>
+	<message key="log.timeline.startDateChanged">Data de abertura da Evento {$oldStartDate} alterada para {$newStartDate}.</message>
+	<message key="log.timeline.endDateChanged">Data de conclusão da evento {$oldEndDate} alterada para {$newEndDate}.</message>
 	<message key="log.timeline.regReviewerOpenDateChanged">Data de abertura de inscrição de avaliadores {$oldRegReviewerOpenDate} alterada para {$newRegReviewerOpenDate}.</message>
 	<message key="log.timeline.regReviewerCloseDateChanged">Data de encerramento da inscrição de avaliadores {$oldRegReviewerCloseDate} alterada para {$newRegReviewerCloseDate}.</message>
 	<message key="log.timeline.regAuthorOpenDateChanged">Data de abertura de inscrição de autores {$oldRegAuthorOpenDate} alterada para {$newRegAuthorOpenDate}.</message>
@@ -859,13 +859,13 @@ O servidor atualmente tem suporte a mbstring: <strong>{$supportsMBString}</stron
 	<!-- RT Settings -->
 	<message key="rt.admin.settings">Configuração da Ferramenta de Leitura</message>
 
-	<message key="rt.admin.settings.description">As ferramentas de leitura são exibidas em um frame ao lado dos itens publicados, nas modalidades da conferência cuja indexação foi habilitada. As ferramentas consistem de itens opcionais relacionados ao item publicado, listados abaixo, e um conjunto de outras ferramentas que proporcionam acesso a mais itens relacionados, organizados por área do conhecimento e atividade.</message>
-	<message key="rt.admin.settings.enableReadingTools">Habilitar Ferramentas de Leitura para as modalidades escolhidas da conferência.</message>
+	<message key="rt.admin.settings.description">As ferramentas de leitura são exibidas em um frame ao lado dos itens publicados, nas modalidades da evento cuja indexação foi habilitada. As ferramentas consistem de itens opcionais relacionados ao item publicado, listados abaixo, e um conjunto de outras ferramentas que proporcionam acesso a mais itens relacionados, organizados por área do conhecimento e atividade.</message>
+	<message key="rt.admin.settings.enableReadingTools">Habilitar Ferramentas de Leitura para as modalidades escolhidas da evento.</message>
 	<message key="rt.admin.settings.relatedItems">Campo de Itens Relacionados</message>
 
 	<message key="rt.admin.options">Ferramentas Opcionais</message>
 
-	<message key="rt.admin.settings.addComment">Incluir comentários (Permite a publicação de comentários dos leitores, gerenciados pelo Diretor da conferência). Comentários dos Leitores deve estar habilitado em Configuração do Site, seção 1.5.</message>
+	<message key="rt.admin.settings.addComment">Incluir comentários (Permite a publicação de comentários dos leitores, gerenciados pelo Diretor da evento). Comentários dos Leitores deve estar habilitado em Configuração do Site, seção 1.5.</message>
 
 	<!-- RT Versions -->
 
@@ -888,7 +888,7 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="rt.metadata.pkp.peerReviewed">Documento avaliado pelos pares</message>
 
 
-	<message key="rt.thisConference">Pesquisar na conferência</message>
+	<message key="rt.thisConference">Pesquisar na evento</message>
 
 	<message key="rt.comments.commentsClosed">† Comentários encerrados em {$closeCommentsDate}</message>
 
@@ -913,19 +913,19 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="schedConf.accommodation">Acomodações</message>
 	<message key="schedConf.schedule.title">Agenda</message>
 	<message key="schedConf.accommodation.title">Acomodações</message>
-	<message key="schedConf.scheduler.locations">Local da conferência</message>
+	<message key="schedConf.scheduler.locations">Local da evento</message>
 	<message key="schedConf.registration.typeFuture">(Abertura das Inscrições {$openingDate})</message>
-	<message key="user.noRoles.chooseConference">Seu cadastro ainda não está associado a nenhuma conferência. Escolha uma:</message>
-	<message key="user.noRoles.noRolesForConference">Seu cadastro não possui papéis nesta conferência. Faça sua escolha a partir das opções a seguir:</message>
+	<message key="user.noRoles.chooseConference">Seu cadastro ainda não está associado a nenhuma evento. Escolha uma:</message>
+	<message key="user.noRoles.noRolesForConference">Seu cadastro não possui papéis nesta evento. Faça sua escolha a partir das opções a seguir:</message>
 	<message key="user.noRoles.submitProposal">Enviar proposta</message>
 	<message key="user.noRoles.submitProposalRegClosed">Enviar Proposta: Inscrições de autores estão encerradas.</message>
 	<message key="user.noRoles.submitProposalSubmissionsClosed">Enviar Proposta: Envio de submissões está encerrado.</message>
-	<message key="user.noRoles.regReviewer">Inscrever-se como Avaliador da Conferência</message>
-	<message key="user.noRoles.regReviewerClosed">Inscrever-se como Avaliador da Conferência: Inscrição de Avaliadores encerrada.</message>
-	<message key="user.noRoles.register">Inscrever-se para participar da conferência</message>
-	<message key="user.noRoles.registerUnavailable">Inscrever-se para participar da conferência: Inscrições não estão sendo aceitas no momento.</message>
-	<message key="reader.accessDenied">Permissão negada para visualizar este documento. Caso possua um cadastro nesta conferência, pode ser necessário entrar no sistema para acessar o conteúdo.</message>
-	<message key="payment.type.conferenceRegistration">Inscrição da Conferência; {$schedConfTitle}; {$registrationTypeName}</message>
+	<message key="user.noRoles.regReviewer">Inscrever-se como Avaliador da Evento</message>
+	<message key="user.noRoles.regReviewerClosed">Inscrever-se como Avaliador da Evento: Inscrição de Avaliadores encerrada.</message>
+	<message key="user.noRoles.register">Inscrever-se para participar da evento</message>
+	<message key="user.noRoles.registerUnavailable">Inscrever-se para participar da evento: Inscrições não estão sendo aceitas no momento.</message>
+	<message key="reader.accessDenied">Permissão negada para visualizar este documento. Caso possua um cadastro nesta evento, pode ser necessário entrar no sistema para acessar o conteúdo.</message>
+	<message key="payment.type.conferenceRegistration">Inscrição da Evento; {$schedConfTitle}; {$registrationTypeName}</message>
 	<message key="plugins.categories.citationFormats.description">Plugins de Formato de Citação oferecem ao usuário vários formatos de citação para os documentos publicados.</message>
 	<message key="reviewer.paper.notifyEditorA">Notificar o diretor da submissão</message>
 	<message key="reviewer.paper.notifyEditorB">se assumirá a responsabilidade de avaliação do trabalho.</message>
@@ -934,7 +934,7 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="reviewer.paper.downloadSubmissionSubmission">Avaliar a submissão</message>
 	<message key="reviewer.paper.enterReviewA">Clique no ícone para digitar (ou colar) sua avaliação da submissão.</message>
 	<message key="reviewer.paper.uploadFile">Adicionalmente, pode-se enviar arquivos para consulta pelo diretor e/ou autor.</message>
-	<message key="about.delayedOpenAccessDescription">O conteúdo desta conferência estará disponível para acesso livre em {$delayedOpenAccessDuration} mês(es) após a conferência agendada ser liberada aos participantes.</message>
+	<message key="about.delayedOpenAccessDescription">O conteúdo desta evento estará disponível para acesso livre em {$delayedOpenAccessDuration} mês(es) após a evento agendada ser liberada aos participantes.</message>
 	<message key="log.timeline.postScheduleDateChanged">A data de agendamento de publicação foi alterada de {$oldPostScheduleDate} para {$newPostScheduleDate}.</message>
 	<message key="log.timeline.postScheduleChanged">A configuração "agenda de publicação" foi alterada de {$oldPostSchedule} para {$newPostSchedule}.</message>
 	<message key="common.copy">Cópia</message>
@@ -948,7 +948,7 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="common.sitePageHeader.altText">Imagem de cabeçalho do site</message>
 	<message key="common.pageHeader.altText">Imagem de cabeçalho de páginas internas</message>
 	<message key="common.homePageHeader.altText">Imagem de cabeçalho da página inicial</message>
-	<message key="common.conferenceHomepageImage.altText">Imagem da página inicial da Conferência</message>
+	<message key="common.conferenceHomepageImage.altText">Imagem da página inicial da Evento</message>
 	<message key="paper.comments.trackDefault">Padrão</message>
 	<message key="paper.comments.disable">Desabilitar</message>
 	<message key="paper.comments.enable">Habilitar</message>
@@ -967,11 +967,11 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="manager.setup.citations">Permitir a autores encaminhar separadamente uma lista de referências (citações) como parte da submissão.</message>
 	<message key="submission.comments.viewableDescription"><![CDATA[Estes comentários podem ser compartilhados com o autor.<br />
 (Após salvar, outros comentários podem ser incluídos.)]]></message>
-	<message key="about.conferencePolicies">Políticas da Conferência</message>
+	<message key="about.conferencePolicies">Políticas da Evento</message>
 	<message key="about.aboutThisPublishingSystem.altText">Processo de submissão, avaliação e publicação do sistema</message>
 	<message key="log.director.unpublish">O documento foi devolvido à fila.</message>
-	<message key="notification.mailListDescription">Informe seu endereço de e-mail para receber notificações instantâneas de conteúdo importante recentemente incluído na conferência.</message>
-	<message key="notification.notificationsPublicDescription"><![CDATA[Esta página apresenta atualizações importantes associadas a esta conferência, como avisos, noticias ou novas submissões. Pode-se assinar estas notificações via Canais RSS (clicando nas imagens à direita), ou <a href="{$emailUrl}">via e-mail.</a>]]></message>
+	<message key="notification.mailListDescription">Informe seu endereço de e-mail para receber notificações instantâneas de conteúdo importante recentemente incluído na evento.</message>
+	<message key="notification.notificationsPublicDescription"><![CDATA[Esta página apresenta atualizações importantes associadas a esta evento, como avisos, noticias ou novas submissões. Pode-se assinar estas notificações via Canais RSS (clicando nas imagens à direita), ou <a href="{$emailUrl}">via e-mail.</a>]]></message>
 	<message key="notification.type.paperSubmitted">Um novo documento, "{$param}", foi enviado.</message>
 	<message key="notification.type.editing">Eventos da Edição</message>
 	<message key="notification.type.directorDecisionComment">Um comentário foi feito na decisão editorial por "{$param}".</message>

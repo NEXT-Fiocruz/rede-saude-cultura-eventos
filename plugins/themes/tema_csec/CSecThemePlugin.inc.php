@@ -41,13 +41,19 @@ class CSecThemePlugin extends ThemePlugin {
 	function getLocaleFilename($locale) {
 		return null; // No locale data
 	}
-
+/*
+  function initialize($x) {
+    var_dump('initialize');
+    var_dump($x);exit;
+    return null; // No locale data
+  }
+*/
 	/**
 	 * Activate the theme.
      * Add plugin theme template dir
 	 */
 	function activate(&$templateMgr) {
-	
+	  
 	if (($stylesheetFilename = $this->getStylesheetFilename()) != null) {
 			$path = Request::getBaseUrl() . '/' . $this->getPluginPath() . '/' . $stylesheetFilename;
 			$templateMgr->addStyleSheet($path);
