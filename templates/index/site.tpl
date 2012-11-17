@@ -13,7 +13,7 @@
 {if $siteTitle}
 	{assign var="pageTitleTranslated" value=$siteTitle}
 {/if}
-{include file="common/header.tpl"}
+{include file="index/portal-header.tpl"}
 {/strip}
 
 {if $intro}{$intro|nl2br}{/if}
@@ -27,9 +27,11 @@
   <p>{$conference->getLocalizedSetting('description')|nl2br}</p>
   {/if}
   
-  <p>
-  
-  <a href="{url conference=$conference->getPath() schedConf=""}" class="action">{translate key="site.conferenceView"}</a></p>
+  <div class="actions">
+    <p>
+      <a href="{url conference=$conference->getPath() schedConf=""}" class="action">{translate key="site.conferenceView"}</a>
+    </p>
+  </div>
 
 </div>
 {/iterate}

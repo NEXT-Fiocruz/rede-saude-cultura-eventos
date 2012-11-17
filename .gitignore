@@ -6,7 +6,8 @@ config.inc.php
 config.TEMPLATE.inc.php
 
 # Ignore paths that contain user-generated content.
-public/*
+public/conferences/*
+public/site/*
 arquivos/*
 cache/*
 /cache/*
