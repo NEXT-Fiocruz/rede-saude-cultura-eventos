@@ -81,7 +81,6 @@ function saveUserWP(
 
   $sql = "INSERT INTO `$banco` (
     `username`,
-    `password`,
     `name`,  
     `email`,
     `naturezaatuacao`,
@@ -91,7 +90,6 @@ function saveUserWP(
     `cpf`
   ) VALUES (
     '$username',
-    '$password',
     '$name',
     '$email',
     '$naturezaatuacao',

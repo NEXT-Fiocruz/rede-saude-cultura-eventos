@@ -12,5 +12,8 @@ arquivos/*
 cache/*
 /cache/*
 
+relatorios/inc/database/dbConfig.php 
+/relatorios/inc/database/dbConfig.php 
+
 # ..
 robots.txt
