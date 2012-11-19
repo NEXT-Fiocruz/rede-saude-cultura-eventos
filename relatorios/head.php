@@ -44,8 +44,10 @@
         chart.draw(data, options);
       }
       
-      google.setOnLoadCallback(drawTable);
+      
       google.load('visualization', '1', {packages:['table']});
+      
+      google.setOnLoadCallback(drawTable);
       
       function drawTable() {
         var data = new google.visualization.DataTable();
