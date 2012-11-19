@@ -37,7 +37,7 @@
         
       <div id="page-header">
         <h1>
-          Relatório da 1ª Conexão Internacional de Saúde e (Ciber) Cultura
+          Dados da 1ª Semana de Ciência, Cultura e Saúde
         </h1>
       </div>
     <!--Div that will hold the pie chart-->

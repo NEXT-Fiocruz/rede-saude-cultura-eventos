@@ -1,6 +1,6 @@
   <head>
     <meta charset="UTF-8">
-    <title> Relatório da 1ª Conexão Internacional de Saúde e (Ciber) Cultura</title>
+    <title>Dados da 1ª Semana de Ciência, Cultura e Saúde</title>
     <!-- jquery -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
