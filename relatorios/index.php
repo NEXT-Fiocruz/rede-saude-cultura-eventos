@@ -46,7 +46,7 @@
     <div id="table_div"></div>
     <p><em>Tabela ordenavel, clique nas colunas para ordenar</em></p>
 
-    <div id="chart_div"></div>
+    <div id="chart_div"><strong>ATENÇÂO: Utilize o navegador Chrome, firefox ou Opera para visualizar o gráfico</strong></div>
     <p><em>Grafico interativo, passe o mouse em cima do grafico para exibir as informações</em></p>
     
     
