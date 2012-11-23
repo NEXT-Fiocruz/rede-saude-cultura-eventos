@@ -21,7 +21,7 @@
 {iterate from=conferences item=conference}
 <div class="portal-home-conference">
   
-  <h3>{$conference->getConferenceTitle()|escape}</h3>
+  <h2>{$conference->getConferenceTitle()|escape}</h2>
   
   {if $conference->getLocalizedSetting('description') != ''}
   <p>{$conference->getLocalizedSetting('description')|nl2br}</p>
