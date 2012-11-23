@@ -111,33 +111,7 @@
 
 <div id="body">
 
-{if $leftSidebarCode || $rightSidebarCode}
-	<div id="sidebar">
-		{if $leftSidebarCode}
-			<div id="leftSidebar">
-				{$leftSidebarCode}
-			</div>
-		{/if}
-		{if $rightSidebarCode}
-			<div id="rightSidebar">
-
-			   {include file="index/banner-hotsite.tpl"}
-         {include file="index/banner-site-evento.tpl"}
-
-			</div>
-		{/if}
-	</div>
-{/if}
-
-{if $leftSidebarCode && $rightSidebarCode}
-<div id="main" class="three_column">
-{elseif $leftSidebarCode}
-<div id="main" class="left_column">
-{elseif $rightSidebarCode}
-<div id="main" class="right_column">
-{else}
 <div id="main" class="full-width">
-{/if}
 
 <h2>{$pageTitleTranslated}</h2>
 
