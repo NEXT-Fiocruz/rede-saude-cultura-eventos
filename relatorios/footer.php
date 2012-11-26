@@ -1,8 +1,7 @@
 <div id="footer">
   <div class="container">
     <p> 
-      <strong>VERSÂO 0.1 BETA</strong> Os relatorios ainda estão em desenvolvimento e 
-      mais informações serão adicionadas nas proximas atualizações.   
+      <strong>Versão do sistema: 0.2 BETA</strong>  
     </p>
     <p class="muted credit">Página de dados desenvolvida pelo 
        <a href="http://www.albertosouza.net">Alberto Souza.</a>
